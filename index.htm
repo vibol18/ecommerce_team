@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lexer Navbar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <!-- Theme Switcher -->
+  <div class="switcher">
+    <span class="label">Theme:</span>
+    <button class="theme-btn selected" onclick="setTheme('teal', this)">Teal dark</button>
+    <button class="theme-btn" onclick="setTheme('purple', this)">Purple dark</button>
+    <button class="theme-btn" onclick="setTheme('navy', this)">Navy blue</button>
+    <button class="theme-btn" onclick="setTheme('charcoal', this)">Charcoal</button>
+    <button class="theme-btn" onclick="setTheme('forest', this)">Forest</button>
+    <button class="theme-btn rainbow-btn" onclick="setTheme('rainbow', this)"> Rainbow</button>
+  </div>
+
+  <!-- Top Navbar -->
+  <div id="navbar" class="navbar">
+    <div id="logo" class="logo">lexer</div>
+    <div class="nav-links">
+      <span class="nav-link active" onclick="setActive(this)">Marketing</span>
+      <span class="nav-link" onclick="setActive(this)">Service</span>
+      <span class="nav-link" onclick="setActive(this)">Monitoring</span>
+      <span class="nav-link" onclick="setActive(this)">Integrations</span>
+      <span class="nav-link" onclick="setActive(this)">Settings</span>
+    </div>
+  </div>
+
+  <!-- Sub Navbar -->
+  <div id="subnav" class="subnav">
+    <span class="sub-link active" onclick="setSubActive(this)">Measure <span class="badge">new</span></span>
+    <span class="sub-link" onclick="setSubActive(this)">Segment &amp; explore <span class="badge">new</span></span>
+    <span class="sub-link" onclick="setSubActive(this)">Analyse <span class="badge">new</span></span>
+    <span class="sub-link" onclick="setSubActive(this)">Compare <span class="badge">new</span></span>
+  </div>
+
+  <!-- Page Content -->
+  <div id="content" class="content-area">Page content area</div>
+
+  <script src="style.js"></script>
+
 </body>
 </html>
