@@ -113,3 +113,22 @@ function setSubActive(el) {
 }
 
 applyTheme(currentTheme);
+
+ applyTheme(currentTheme);
+
+new Swiper(".mySwiper", {
+  
+  spaceBetween: 16,
+  loop: true,
+
+  autoplay: {
+    delay: 3000, // 3 seconds
+    disableOnInteraction: false, // keep sliding after user touch
+  },
+
+
+  scrollbar: { 
+    el: ".swiper-scrollbar", 
+    draggable: true 
+  },
+});
