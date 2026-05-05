@@ -9,16 +9,6 @@ const themes = {
 
 let currentTheme = themes.teal;
 
-function clearRainbow() {
-  document.getElementById('navbar').classList.remove('rainbow');
-  document.getElementById('logo').classList.remove('rainbow');
-  document.getElementById('subnav').classList.remove('rainbow');
-  document.getElementById('content').classList.remove('rainbow');
-  document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('rainbow-link'));
-  document.querySelectorAll('.sub-link').forEach(el => el.classList.remove('rainbow-sub'));
-  document.querySelectorAll('.badge').forEach(el => el.classList.remove('rainbow-badge'));
-}
-
 function applyRainbow() {
   clearRainbow();
   document.getElementById('navbar').classList.add('rainbow');
@@ -36,7 +26,6 @@ function applyRainbow() {
   document.getElementById('content').style.background = '';
   document.getElementById('logo').style.color = '';
 }
-
 function applyTheme(t) {
   document.getElementById('navbar').style.background = t.nav;
   document.getElementById('logo').style.color = t.logo;
@@ -70,7 +59,6 @@ function applyTheme(t) {
     b.style.background = t.accent; b.style.color = t.accentText;
   });
 }
-
 function setTheme(name, btn) {
   currentTheme = themes[name];
   document.querySelectorAll('.theme-btn').forEach(b => {
@@ -114,7 +102,6 @@ function setSubActive(el) {
 
 applyTheme(currentTheme);
 
- applyTheme(currentTheme);
 
 new Swiper(".mySwiper", {
   
@@ -125,7 +112,6 @@ new Swiper(".mySwiper", {
     delay: 3000, // 3 seconds
     disableOnInteraction: false, // keep sliding after user touch
   },
-
 
   scrollbar: { 
     el: ".swiper-scrollbar", 
