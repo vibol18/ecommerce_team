@@ -1,0 +1,163 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; }
+
+.navbar {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  gap: 32px;
+  transition: background 0.6s ease;
+}
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-style: italic;
+  transition: color 0.6s ease;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+.nav-link {
+  font-size: 14px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: rgba(255,255,255,0.65);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+.nav-link:hover { color: #fff; }
+.nav-link.active { font-weight: 500; }
+
+.subnav {
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 42px;
+  border-bottom: 1px solid transparent;
+  transition: background 0.6s ease, border-color 0.6s ease;
+}
+.sub-link {
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+.sub-link.active { font-weight: 500; }
+
+.badge {
+  font-size: 9px;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.content-area {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+/* Rainbow theme */
+@keyframes rainbowNav {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes rainbowShift {
+  0%   { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.navbar.rainbow {
+  background: linear-gradient(270deg, #ff0080, #ff8c00, #ffe000, #00c853, #00b4d8, #7b2ff7, #ff0080);
+  background-size: 400% 400%;
+  animation: rainbowNav 4s ease infinite;
+  transition: none;
+}
+.logo.rainbow {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+  animation: rainbowShift 3s linear infinite;
+}
+.nav-link.rainbow-link { color: rgba(255,255,255,0.85); }
+.nav-link.rainbow-link:hover { color: #fff; }
+.nav-link.rainbow-link.active {
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  backdrop-filter: blur(4px);
+}
+.subnav.rainbow {
+  background: linear-gradient(270deg, #ffe0f0, #fff3e0, #fffde0, #e0f7ea, #e0f7fa, #ede7f6, #ffe0f0);
+  background-size: 400% 400%;
+  animation: rainbowNav 4s ease infinite;
+  border-bottom-color: rgba(0,0,0,0.08);
+  transition: none;
+}
+.sub-link.rainbow-sub { color: #555; }
+.sub-link.rainbow-sub.active {
+  background: rgba(255,255,255,0.6);
+  color: #222;
+}
+.badge.rainbow-badge {
+  background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcb77, #4d96ff);
+  background-size: 200%;
+  animation: rainbowNav 2s ease infinite;
+  color: #fff;
+}
+.content-area.rainbow {
+  background: linear-gradient(270deg, #ffe0f0, #fff3e0, #fffde0, #e0f7ea, #e0f7fa, #ede7f6, #ffe0f0);
+  background-size: 400% 400%;
+  animation: rainbowNav 6s ease infinite;
+  transition: none;
+}
+.rainbow-btn {
+  background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcb77, #4d96ff, #c77dff);
+  background-size: 200%;
+  animation: rainbowNav 2s ease infinite;
+  color: #fff !important;
+  border-color: transparent !important;
+  font-weight: 600;
+}
+
+.switcher {
+  display: flex;
+  gap: 8px;
+  padding: 10px 24px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.label { font-size: 12px; color: #888; }
+.theme-btn {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: #555;
+  background: #fff;
+  transition: background 0.3s, color 0.3s, transform 0.15s;
+}
+.theme-btn:hover { background: #f0f0f0; transform: translateY(-1px); }
+.theme-btn:active { transform: scale(0.95); }
+.theme-btn.selected {
+  border-color: transparent;
+  font-weight: 600;
+}

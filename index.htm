@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lexer Navbar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="Body.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Theme Switcher -->
+    <div class="switcher">
+      <span class="label">Theme:</span>
+      <button class="theme-btn selected" onclick="setTheme('teal', this)">
+        Teal dark
+      </button>
+      <button class="theme-btn" onclick="setTheme('purple', this)">
+        Purple dark
+      </button>
+      <button class="theme-btn" onclick="setTheme('navy', this)">
+        Navy blue
+      </button>
+      <button class="theme-btn" onclick="setTheme('charcoal', this)">
+        Charcoal
+      </button>
+      <button class="theme-btn" onclick="setTheme('forest', this)">
+        Forest
+      </button>
+      <button class="theme-btn rainbow-btn" onclick="setTheme('rainbow', this)">
+        Rainbow
+      </button>
+    </div>
+
+    <!-- Top Navbar -->
+    <div id="navbar" class="navbar">
+      <div id="logo" class="logo">lexer</div>
+      <div class="nav-links">
+        <span class="nav-link active" onclick="setActive(this)">Marketing</span>
+        <span class="nav-link" onclick="setActive(this)">Service</span>
+        <span class="nav-link" onclick="setActive(this)">Monitoring</span>
+        <span class="nav-link" onclick="setActive(this)">Integrations</span>
+        <span class="nav-link" onclick="setActive(this)">Settings</span>
+      </div>
+    </div>
+    <!-- Sub Navbar -->
+    <div id="subnav" class="subnav">
+      <span class="sub-link active" onclick="setSubActive(this)"
+        >Measure <span class="badge">new</span></span
+      >
+      <span class="sub-link" onclick="setSubActive(this)"
+        >Segment &amp; explore <span class="badge">new</span></span
+      >
+      <span class="sub-link" onclick="setSubActive(this)"
+        >Analyse <span class="badge">new</span></span
+      >
+      <span class="sub-link" onclick="setSubActive(this)"
+        >Compare <span class="badge">new</span></span
+      >
+    </div>
+
+    <!-- BODY -->
+    <div class="p-4">
+      <div class="swiper mySwiper rounded-2xl overflow-hidden shadow-lg">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide relative">
+            <div class="">
+              <img
+                src="https://media.istockphoto.com/id/637372676/photo/internet-shopping-and-e-commerce-package-delivery-concept.jpg?s=612x612&w=0&k=20&c=Vc4k3vuPSY6BHVN865giYGgghvz3i3WDTgaLWFMjEd0="
+                class="w-full h-72 object-cover"
+                alt="Slide 1" />
+              <div
+                class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+                <span
+                  class="text-xs font-semibold text-white/70 uppercase tracking-widest"
+                  >Subtitle</span
+                >
+                <h2 class="text-white text-xl font-bold mt-1">Title</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img
+              src="https://img.freepik.com/free-vector/3d-isometric-e-commerce-concept-online-store_1441-2128.jpg?semt=ais_hybrid&w=740&q=80"
+              class="w-full h-72 object-cover"
+              alt="Slide 2" />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+              <span
+                class="text-xs font-semibold text-white/70 uppercase tracking-widest"
+                >Subtitle</span
+              >
+              <h2 class="text-white text-xl font-bold mt-1">Title</h2>
+            </div>
+          </div>
+
+          <div class="swiper-slide relative">
+            <img
+              src="https://pagecreative.co.uk/wp-content/uploads/2023/10/AdobeStock_223290240-1-2-scaled.jpeg"
+              class="w-full h-72 object-cover"
+              alt="Slide 2" />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+              <span
+                class="text-xs font-semibold text-white/70 uppercase tracking-widest"
+                >Subtitle</span
+              >
+              <h2 class="text-white text-xl font-bold mt-1">Title</h2>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    <!-- Body  -->
+    <!-- Circle-container -->
+    <div class="Circle">
+      <div class="wrap">
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+        <div class="Box-circle">
+          <img
+            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+            alt="Graphic" />
+          <p>Graphic Card</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card-box -->
+    <div class="Contain-box">
+      <div class="Card">
+        <div>
+          <img src="" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="content" class="content-area">Page content area</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
