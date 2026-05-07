@@ -88,6 +88,7 @@ function setTheme(name, btn) {
   }
 }
 
+
 function setActive(el) {
   document.querySelectorAll('.nav-link').forEach(e => {
     e.classList.remove('active'); e.style.background = ''; e.style.color = '';
