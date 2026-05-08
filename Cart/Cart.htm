@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="Cart.css" />
+  </head>
+  <body>
+    <main class="cart-page">
+      <section class="cart-card" aria-labelledby="cart-title">
+        <header class="cart-header">
+          <h1 id="cart-title">Shopping Cart</h1>
+          <button type="button" id="removeAllBtn" class="text-btn danger-btn">
+            Remove all
+          </button>
+        </header>
+
+        <div id="cartItems" class="cart-items" aria-live="polite"></div>
+
+        <section
+          id="savedSection"
+          class="saved-items is-hidden"
+          aria-live="polite">
+          <h2>Saved for later</h2>
+          <div id="savedItemsList" class="saved-list"></div>
+        </section>
+
+        <footer class="cart-footer">
+          <div class="subtotal-wrap">
+            <p class="subtotal-title">Sub-Total</p>
+            <p id="itemCount" class="subtotal-count">0 items</p>
+          </div>
+          <p id="subtotalPrice" class="subtotal-price">$0.00</p>
+        </footer>
+
+        <button type="button" id="checkoutBtn" class="checkout-btn">
+          Checkout
+        </button>
+      </section>
+    </main>
+
+    <script src="Cart.js"></script>
+  </body>
+</html>
