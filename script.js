@@ -1,3 +1,4 @@
+
 const themes = {
   teal:     { nav: '#1a2b3c', logo: '#4dd9b0', subnav: '#eef7f5', subnavBorder: '#d0e9e3', accent: '#4dd9b0', accentText: '#0f1e2b', subText: '#4a6e65', content: '#f0f7f5', contentText: '#9ab8b0' },
   purple:   { nav: '#1e1535', logo: '#9b7ef8', subnav: '#f0eeff', subnavBorder: '#d8cffa', accent: '#9b7ef8', accentText: '#1a0f3a', subText: '#5a4a80', content: '#f5f2ff', contentText: '#a090c8' },
@@ -6,6 +7,10 @@ const themes = {
   forest:   { nav: '#0f2518', logo: '#52c76a', subnav: '#edf5ee', subnavBorder: '#c5dfca', accent: '#52c76a', accentText: '#071510', subText: '#2a5530', content: '#eef7ef', contentText: '#7ab88a' },
   rainbow:  null,
 };
+const cart = document.getElementById("cart")
+cart.addEventListener("click",()=>{
+  window.location.href = "./Cart/Cart.htm";
+})
 
 let currentTheme = themes.teal;
 

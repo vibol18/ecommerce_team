@@ -7,6 +7,7 @@
   <title>Lexer Navbar</title>
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -31,6 +32,10 @@
       <span class="nav-link" onclick="setActive(this)">Monitoring</span>
       <span class="nav-link" onclick="setActive(this)">Integrations</span>
       <span class="nav-link" onclick="setActive(this)">Settings</span>
+      <div class="cart  flex justify" id="cart">
+        <i class="fa-solid fa-cart-arrow-down"></i>
+        <h1 >card</h1>
+      </div>
     </div>
   </div>
   <!-- Sub Navbar -->
@@ -82,58 +87,67 @@
   <!-- Page Content -->
   <div id="content" class="content-area">Page content area</div>
  <!-- Circle-container -->
-    <div class="Circle">
-      <div class="wrap">
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-        <div class="Box-circle">
-          <img
-            src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
-            alt="Graphic" />
-          <p>Graphic Card</p>
-        </div>
-      </div>
+   <div class="py-12 px-8 bg-gray-100" id="category_circle">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+    Categories
+  </h2>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+    
+    <div
+      class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 p-5 text-center cursor-pointer"
+    >
+      <img
+        class="w-24 h-24 rounded-full object-cover border-4 border-indigo-500 mx-auto"
+        src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+        alt="Graphic"
+      />
+      <p class="mt-4 text-lg font-semibold text-gray-700">
+        Graphic Card
+      </p>
     </div>
+
+    <div
+      class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 p-5 text-center cursor-pointer"
+    >
+      <img
+        class="w-24 h-24 rounded-full object-cover border-4 border-indigo-500 mx-auto"
+        src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+        alt="Graphic"
+      />
+      <p class="mt-4 text-lg font-semibold text-gray-700">
+        Graphic Card
+      </p>
+    </div>
+
+    <div
+      class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 p-5 text-center cursor-pointer"
+    >
+      <img
+        class="w-24 h-24 rounded-full object-cover border-4 border-indigo-500 mx-auto"
+        src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+        alt="Graphic"
+      />
+      <p class="mt-4 text-lg font-semibold text-gray-700">
+        Graphic Card
+      </p>
+    </div>
+
+    <div
+      class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:-translate-y-2 transition duration-300 p-5 text-center cursor-pointer"
+    >
+      <img
+        class="w-24 h-24 rounded-full object-cover border-4 border-indigo-500 mx-auto"
+        src="https://i.pinimg.com/1200x/47/a4/49/47a44923fe5fda884203a25c06e3c96c.jpg"
+        alt="Graphic"
+      />
+      <p class="mt-4 text-lg font-semibold text-gray-700">
+        Graphic Card
+      </p>
+    </div>
+
+  </div>
+</div>
     <!-- Card-box -->
     <div class="Contain-box">
       <div class="Card">
@@ -142,7 +156,22 @@
         </div>
       </div>
     </div>
+    <div class="products_container">
+      <div class="pruducts">
+        <div class="item-image">
+          <img src="https://image.spreadshirtmedia.com/content/q_auto,f_auto,w_210/CMS/SSP/product_image_shirt_kids.png" alt="">
+          <div id="item-description" class="flex justify-center">
+            <p>coca cola</p>
+            <p>$23.55</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <script src="./script.js"></script>
+   
   </body>
+  <script src="./script.js" type="module">
+    
+  </script>
+
 </html>

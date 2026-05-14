@@ -1,4 +1,8 @@
-\const productCards = document.querySelectorAll(".product-card");
+
+
+
+const productCards = document.querySelectorAll(".product-card");
+
 
 productCards.forEach((card) => {
   const sizeBtn = card.querySelectorAll(".size-btn");
